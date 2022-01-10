@@ -30,6 +30,23 @@
             background: #ece5db;
             font-family: WeissStd;
         }
+
+
+        nav {
+            background: #ece5db;
+            font-family: 'Nunito', sans-serif;
+
+        }
+
+        .navbar-nav {
+            border-top: 1px solid #cccccc;
+            border-bottom: 1px solid #cccccc;
+        }
+
+        .nav-item {
+            margin-right: 20px;
+        }
+
         .card {
             background: #dbd5c3;
             border: none;
@@ -73,6 +90,16 @@
             width: 200px;
         }
 
+        .nav-link {
+            font-weight: bold;
+            color: black !important;
+        }
+
+        .active {
+
+            color: red !important;
+        }
+
 
 
         /*Slick slider css*/
@@ -114,6 +141,57 @@
 
 </head>
 <body>
+
+
+{{--Nabvar / Menu bar--}}
+
+<nav class="navbar navbar-expand-lg navbar-light mt-4 mb-4">
+    <div class="container">
+        <a class="navbar-brand" style="font-size: 28px; font-family: WeissStdBold;" href="#">The Empire Strokes Back</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CONTACT US</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">lOGIN</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">SUBSCRIBE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
+                </li>
+{{--                <li class="nav-item dropdown">--}}
+{{--                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">--}}
+{{--                        Dropdown link--}}
+{{--                    </a>--}}
+{{--                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">--}}
+{{--                        <li><a class="dropdown-item" href="#">Action</a></li>--}}
+{{--                        <li><a class="dropdown-item" href="#">Another action</a></li>--}}
+{{--                        <li><a class="dropdown-item" href="#">Something else here</a></li>--}}
+{{--                    </ul>--}}
+{{--                </li>--}}
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+
 
 <div class="container hero-section mt-4">
     <div class="row">
@@ -385,7 +463,12 @@
     });
 </script>
 
-
+{{--<div>--}}
+{{--    <i class="fab fa-twitter"></i>--}}
+{{--    <i class="fab fa-instagram"></i>--}}
+{{--    <i class="fab fa-youtube"></i>--}}
+{{--    <i class="fab fa-facebook"></i>--}}
+{{--</div>--}}
 
 
 
