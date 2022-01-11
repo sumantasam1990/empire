@@ -49,6 +49,8 @@
 
 <script src="{{ asset('slick.js') }}" type="text/javascript" charset="utf-8"></script>
 
+<script src="{{ asset('js/jquery.hotspot.js') }}"></script>
+
 <script type="text/javascript">
     $(document).on('ready', function() {
         $('.center').slick({
@@ -76,7 +78,16 @@
 </script>
 
 
+<script>
+    $(document).ready (function() {
 
+        if ($('#hotspotImg').length > 0) {
+            $('#hotspotImg').hotSpot({
+                bindselector: 'click'
+            });
+        }
+    });
+</script>
 
 
 </body>

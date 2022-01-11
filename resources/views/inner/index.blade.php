@@ -1,12 +1,98 @@
 @include('layouts.header')
 
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-12 hero-single">
 
+<div id="hotspotImg" class="responsive-hotspot-wrap row" style="width:100%;">
+    <img src="{{ asset('imgs/3.jpeg') }}" class="img-responsive" alt="" style="width: 100%; height: 600px; object-fit: cover;">
+
+    <div class="hot-spot" x="900" y="43">
+        <div class="circle"></div>
+        <div class="tooltip">
+            <div class="img-row">
+                <img src="img/dummy-178-120.jpg" alt="Jurong Lake Gardens #1" width="170" height="128">
+            </div>
+            <div class="text-row">
+                <h4>Lorem Ipsum</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
         </div>
     </div>
+
+    <div class="hot-spot" x="1171" y="224">
+        <div class="circle"></div>
+        <div class="tooltip">
+            <div class="img-row">
+                <img src="img/dummy-178-120.jpg" alt="High Speed Rail" width="170" height="128">
+            </div>
+            <div class="text-row">
+                <h4>Lorem Ipsum</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="hot-spot" x="1052" y="108">
+        <div class="circle"></div>
+        <div class="tooltip">
+            <div class="img-row">
+                <img src="img/dummy-178-120.jpg" alt="JLD Central Park" width="170" height="128">
+            </div>
+            <div class="text-row">
+                <h4>Lorem Ipsum</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="hot-spot" x="825" y="285">
+        <div class="circle"></div>
+        <div class="tooltip">
+            <div class="img-row">
+                <img src="img/dummy-178-120.jpg" alt="The Science Centre" width="170" height="128">
+            </div>
+            <div class="text-row">
+                <h4>Lorem Ipsum</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="hot-spot" x="1470" y="284">
+        <div class="circle"></div>
+        <div class="tooltip">
+            <div class="img-row">
+                <img src="img/dummy-178-120.jpg" alt="Former Jurong TownHall" width="170" height="128">
+            </div>
+            <div class="text-row">
+                <h4>Lorem Ipsum</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="hot-spot" x="620" y="105">
+        <div class="circle"></div>
+        <div class="tooltip">
+            <div class="img-row">
+                <img src="img/dummy-178-120.jpg" alt="JLD New Island" width="170" height="128">
+            </div>
+            <div class="text-row">
+                <h4>Lorem Ipsum</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+    </div>
+
 </div>
+
+
+
+{{--<div class="container-fluid">--}}
+{{--    <div class="row">--}}
+{{--        <div class="col-12 hero-single">--}}
+
+{{--        </div>--}}
+{{--    </div>--}}
+{{--</div>--}}
 
 
 <div class="container mt-4 mb-4">
@@ -19,8 +105,10 @@
                             George V's 1911 hunting trip in Nepal
                         </button>
                     </h2>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </div>
                     </div>
                 </div>
                 <div class="accordion-item">
@@ -83,12 +171,15 @@
                 <div class="accordion accordion-flush" id="accordionFlushExample">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingOne00">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne00" aria-expanded="true" aria-controls="flush-collapseOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne00" aria-expanded="true" aria-controls="flush-collapseOne">
                                 <i class="fas fa-tag"></i> &nbsp; Buy now
                             </button>
                         </h2>
-                        <div id="flush-collapseOne00" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                        <div id="flush-collapseOne00" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <a class="btn btn-outline-dark btn-sm emp-btn" href=""><i class="fas fa-print"></i> Prints</a> &nbsp;
+                                <a class="btn btn-outline-dark btn-sm emp-btn" href="">Originals</a>
+                            </div>
                         </div>
                     </div>
                     <div class="accordion-item">
