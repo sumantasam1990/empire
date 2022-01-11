@@ -33,13 +33,13 @@
     </footer>
 </section>
 
-<section class="container-fluid" style="background: #000; color: #fff; padding: 6px;">
+<div class="container-fluid copy-footer">
     <div class="row text-center">
         <div class="col-12">
             <p style="margin-top: 5px;">&copy; 2022 All Rights Reserved.</p>
         </div>
     </div>
-</section>
+</div>
 
 
 <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>

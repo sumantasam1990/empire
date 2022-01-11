@@ -31,6 +31,10 @@
             font-family: WeissStd;
         }
 
+        .rightsidebar .accordion-button::after {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-plus-lg' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z'/%3E%3C/svg%3E") !important;
+        }
+
         a {
             text-decoration: none;
             font-size: 18px;
@@ -116,6 +120,43 @@
             padding: 30px;
         }
 
+        .hero-single {
+            background: url("{{ asset('imgs/hero.jpeg') }}");
+            width: 100%;
+            height: 600px;
+        }
+
+        .accordion-item {
+            background: #DBD5C3;
+        }
+
+        .accordion-button {
+            color: #1a202c !important;
+            box-shadow: none !important;
+            background: #ECE5DB !important;
+        }
+
+        .accordion-header button {
+            font-size: 26px !important;
+        }
+
+        .rightsidebar .accordion-header button {
+            font-size: 18px !important;
+        }
+
+        .key-btn {
+            background: #DBD5C3;
+            padding: 4px !important;
+            margin-top: 10px;
+            margin-right: 5px;
+        }
+
+        .copy-footer {
+            background: #000;
+            color: #fff;
+            height: 60px;
+            padding-top: 10px;
+        }
 
 
         /*Slick slider css*/

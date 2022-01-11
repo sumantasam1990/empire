@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('/search', function () {
     return view('search.index');
 });
+
+Route::get('/inner', function () {
+    return view('inner.index');
+});
